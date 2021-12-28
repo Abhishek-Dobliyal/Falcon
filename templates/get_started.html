@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Get Started
+{% endblock %}
+
+{% block content %}
+    {% for msg in get_flashed_messages() %}
+        <div data-aos="fade-up" class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>{{ msg }}</strong>
+        </div>
+    {% endfor %}
+    <div class="bg-transparent" data-aos="zoom-in">
+        <img src="../static/img/falcon.png" class="bg-transparent m-3" height="120" width="120">
+        <h1 class="my-4">Get Started</h1>
+        <h4>[ Enable Falcon Vision ]</h4>
+        <div class="container ml-4" data-aos="fade-up">
+            <div class="container p-4">
+                <span class="lead" style="color: whitesmoke;">
+                    1. Download the Falcon Payload
+                </span>
+                <a href="payload" class="btn-get-started scrollto payload">Falcon Payload</a>
+              </div>
+              <span class="lead" style="color: whitesmoke;">
+                2. Access the Falcon Dashboard
+              </span>
+              <a href="dashboard" class="register scrollto dashboard">Falcon Dashboard</a>
+        </div>
+    </div>
+{% endblock %}

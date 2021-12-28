@@ -1,0 +1,46 @@
+{% extends 'layout.html' %} {% block title%} Register {% endblock %} {% block
+content %}
+<div class="wrapper fadeInDown">
+  {% for msgs in get_flashed_messages() %}
+  <div data-aos="fade-up" class="alert alert-info alert-dismissible fade show mt-5" role="alert">
+    <strong>{{ msgs }}</strong>
+  </div>
+  {% endfor %}
+  <div class="p-4 text-center bg-transparent">
+    <h1 class="mb-1">Register</h1>
+  </div>
+  <div id="formContent">
+    <form action="" method="POST">
+      <input
+        type="text"
+        class="fadeIn second"
+        name="admin-id"
+        placeholder="Enter Admin ID"
+      />
+      <input
+        type="password"
+        class="fadeIn third"
+        name="password"
+        placeholder="Enter Password"
+      />
+      <input
+        type="password"
+        id="password-confirm"
+        class="fadeIn third"
+        name="confirm-pass"
+        placeholder="Confirm Password"
+      />
+      <input
+        type="email"
+        class="fadeIn fourth"
+        name="email"
+        placeholder="Enter Email"
+      />
+      <input type="submit" class="fadeIn fourth" value="Register" />
+    </form>
+    <div id="formFooter">
+        <a class="underlineHover" href="login">Already registered?</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
