@@ -43,7 +43,19 @@ python3 app.py
  * Debugger is active!
 ```
 
-- Then run the [client.py] on the system that is to be monitored.
+- Then run the [client.py]() on the system that is to be monitored with the following command:
+
+-> Windows Users
+
+```bash
+python client.py
+```
+
+-> MacOS/Linux Users
+
+```bash
+python3 client.py
+```
 
 ## Note
 
