@@ -1,7 +1,7 @@
 # Falcon
 Remotely monitor any system through simple HTTP requests.
 
-![](/Screenshots/Screenshot 2021-12-28 at 4.58.56 PM.png)
+![](https://raw.githubusercontent.com/Abhishek-Dobliyal/Falcon/main/Screenshots/Screenshot%202021-12-28%20at%204.58.56%20PM.png)
 
 ## Installations and Dependencies
 
