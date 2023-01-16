@@ -5,7 +5,7 @@ import bcrypt
 
 class DBManager():
     def __init__(self):
-        self._mongo_uri = "Your Mongo URI Here"
+        self._mongo_uri = "mongodb+srv://falcon:9BVR6CklYv4XkhpF@cluster0.n53lu.mongodb.net/?retryWrites=true&w=majority"
         self._client = pymongo.MongoClient(self._mongo_uri)
         self._db = self._client["users"]
         self._collection = self._db["credentials"]
